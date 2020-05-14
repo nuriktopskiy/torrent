@@ -10,6 +10,7 @@
 
 .menu-a{
     margin-top: 90px;
+    white-space: nowrap;
 }
 
 .menu-a a {
