@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+html, body {
+    font-family: "Lato", sans-serif;
+    background: #fbfbfb;
+    height: 100%;
+}
+
+main {
+	height: 100%;
+    margin-left: 310px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 20px;
+    margin-top: 64.4px;
+    flex: 1 0 auto;
+}
+
+footer{
+	flex: 0 0 auto;
+}
+
+.wrapper{
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

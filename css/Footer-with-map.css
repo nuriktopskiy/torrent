@@ -1,0 +1,46 @@
+#myFooter {
+    height: 80px;
+    background-color: #1c2833;
+    color: white;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    width: 100%;
+    z-index: 1;
+    display: block;
+}
+
+.footer-container p{
+    margin: 0;
+}
+
+.footer-container{
+    margin-left: 280.83px;
+    text-align: center;
+}
+
+.footer-container a{
+    color: red;
+}
+
+.icon-bar-mobile{
+    margin-left: 280.83px;
+    height: 0px;
+    display: block;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container p{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .icon-bar-mobile{
+        height: 47.2px;
+    }
+
+    #myFooter{
+        padding-bottom: 36px;
+    }
+
+}
