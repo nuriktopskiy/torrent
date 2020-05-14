@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/regform.css"/>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <div class="imgcontainer">
+        <img src="../image/logo.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <h2 style="margin-top: 0; margin-bottom: 8px;">Регистрация</h2>
+        <p style="margin-top: 0;">Пожалуйста, заполните форму чтобы зарегестрироваться.</p>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Введите Email" name="email" required>
+
+          <label for="psw"><b>Пароль</b></label>
+          <input type="password" placeholder="Введите пароль" name="psw" required>
+
+          <label for="psw-repeat"><b>Повторите пароль</b></label>
+          <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+        <button type="submit">Зарегестрироваться</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+        </label>
+        <p style="margin-bottom: 0;">Создавая аккаунт вы принимаете наши <a href="#" style="color:dodgerblue">Правила</a>.</p>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn" onclick="history.back(); return false;">Отмена</button>
+        <button type="button" class="cancelbtn-mobile" onclick="history.back(-2); return false;">Отмена</button>
+        <button type="button" class="regbtn" onclick="window.location.href = 'loginform.html';">У меня есть аккаунт</button>
+      </div>
+    </form>
+  </body>
+</html>

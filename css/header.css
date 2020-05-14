@@ -24,9 +24,10 @@
 }
 
 .header-right{
+	position: relative;
 	float: right;
-	margin-top: 13px;
-	margin-right: 13px;
+	top: 13px;
+	right: 13px;
 }
 
 #alogin{
@@ -45,4 +46,11 @@
 	-webkit-appearance: button; /* преобразование для Chromium */
 	background: purple;
 	color: white;
+}
+
+@-moz-document url-prefix() {
+ 	.header-right{
+		top: 23px;
+		right: 13px;
+	}
 }

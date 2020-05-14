@@ -1,0 +1,77 @@
+table {
+    border-collapse: collapse;
+	margin-top: 10px;
+	font-size: 16px;
+	width: 90%;
+}
+
+tr, td {
+    padding: 2px;
+}
+
+.table{
+	padding: 15px;
+}
+
+.container{
+	margin-bottom: 25px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: rgba(23, 32, 42, 0.04) 8px 8px 0px 0px;
+}
+
+.container_post_title{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 15px;
+	background: #fbfbfb;
+	border-bottom: 1px solid #ddd;
+}
+
+.e-mail{
+	padding: 15px 15px 0px 15px;
+}
+
+.e-mail h4{
+	font-size: 24px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+textarea[type=comment]{
+	box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+}
+
+label{
+	white-space: nowrap;
+}
+
+.sub_reset{
+	width: 100%;
+}
+.sub_reset input{
+	width: 41%;
+	margin-left: auto;
+	margin-right: auto;
+}
