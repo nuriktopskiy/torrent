@@ -17,18 +17,22 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<div class="header">
+				<div class="header" id="header">
 					<div class="header-name"><a href="#">Торрент-трекер</a></div>
+					<span id="openNav" onclick="openNav()">☰</span>
 	  				<input type="text" name="search" placeholder="Поиск.." id="search_header">
+	  				<input type="text" name="search" placeholder="Поиск.." id="search_header_mobile">
 					<div class="header-right">
 						<a href="pages/loginform.html" id="alogin">Вход</a>
 						<a href="pages/regform.html" id="areg">Регистрация</a>
 					</div>
 				</div>
+				<script src="js/topnav.js"></script>
 			</header>
-			<div class="left-sidebar">
-				<div class="sidenav">
-					<div class="menu-a">
+			<div class="left-sidebar" id="left-sidebar">
+				<div class="sidenav" id="sidenav">
+					<div class="menu-a" id="menu-a">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 						<p class="menu_title">Меню сайта</p>
 		  				<a href="#"><i class="fa fa-home"></i> Главная</a>
 		  				<a href="#"><i class="fa fa-gamepad"></i> Игры PC</a>
@@ -39,10 +43,27 @@
 
 		  				<a href="pages/post.html"><i class="fa fa-envelope-o"></i> Написать нам письмо</a>
 		  				<a href="pages/post.html"><i class="fa fa-question-circle-o"></i> Есть вопросы? Вам сюда!</a>
-		  				<a href="#contact"><i class="fa fa-question"></i> Как качать через торрент?</a>
+		  				<a href="#"><i class="fa fa-question"></i> Как качать через торрент?</a>
+					</div>
+				</div>
+				<div class="sidenav-mobile" id="sidenav-mobile">
+					<div class="menu-a" id="menu-a">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+						<p class="menu_title">Меню сайта</p>
+		  				<a href="#"><i class="fa fa-home"></i> Главная</a>
+		  				<a href="#"><i class="fa fa-gamepad"></i> Игры PC</a>
+		  				<a href="#"><i class="fa fa-windows"></i> Windows</a>
+		  				<a href="#"><i class="fa fa-window-maximize"></i> Софт / Программы</a>
+
+		  				<div style="border-top: 1px solid rgba(255, 255, 255, .1); margin: 10px 0;"></div>
+
+		  				<a href="pages/post.html"><i class="fa fa-envelope-o"></i> Написать нам письмо</a>
+		  				<a href="pages/post.html"><i class="fa fa-question-circle-o"></i> Есть вопросы? Вам сюда!</a>
+		  				<a href="#"><i class="fa fa-question"></i> Как качать через торрент?</a>
 					</div>
 				</div>
 			</div>
+			<script src="js/sidenav.js"></script>
 			<main>
 				<div class="container">
 					<div class="container_img">
@@ -84,7 +105,7 @@
 					</div>
 					<div class="container_content">
 						<div class="container_title">
-							<a href="pages/about.html">Текст</a>
+							<a href="pages/about.html">Текст</a> 
 						</div>
 						<div class="container_info">
 							<p>Deadliest Catch: The Game — игровой проект по мотивам реалити-шоу от Discovery. Вы погружаетесь в атмосферу рыболовства и узнаете, насколько опасен труд этих людей в водах Берингово моря. У вас в управлении окажется рыболовное судно, оснащенное всем необходимым оборудованием.</p>

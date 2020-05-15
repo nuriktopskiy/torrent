@@ -28,13 +28,19 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .footer-container{
+        margin-left: 0;
+    }
+
     .footer-container p{
+        padding: 10px;
         margin-bottom: 10px;
         text-align: center;
     }
 
     .icon-bar-mobile{
         height: 47.2px;
+        margin-left: 0;
     }
 
     #myFooter{

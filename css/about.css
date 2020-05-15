@@ -46,7 +46,7 @@ table {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 30px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	font-size: 16px;
 }
 
@@ -86,6 +86,6 @@ tr:nth-child(even){background-color: #f2f2f2}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 1024px) {
 	table{
-		min-width: 100%;
+		min-width: 95%;
 	}
 }

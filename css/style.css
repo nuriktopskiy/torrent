@@ -30,8 +30,14 @@ footer{
 }
 
 @media screen and (max-width: 1024px){
-	.maim{
+
+	main{
 		overflow-y: auto;
-		-webkit-overflow-scrolling:touch
+		-webkit-overflow-scrolling:touch;
+		margin-left: 0;
+		width: 100%;
+	}
+	.wrapper{
+		min-width: 100%;
 	}
 }

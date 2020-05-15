@@ -19,3 +19,14 @@
 #search_header[type=text]:focus {
     width: 60%;
 }
+
+#search_header_mobile[type=text] {
+        display: none;
+    }
+
+@media screen and (max-width: 1024px){
+
+    #search_header[type=text] {
+        display: none;
+    }
+}

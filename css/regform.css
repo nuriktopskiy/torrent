@@ -41,9 +41,7 @@ button:hover {
 }
 
 .cancelbtn-mobile {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
+    display: none;
 }
 
 .regbtn {
@@ -91,5 +89,12 @@ span.psw {
 
     .cancelbtn{
         display: none;
+    }
+
+    .cancelbtn-mobile {
+        display: inline;
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
     }
 }
