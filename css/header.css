@@ -37,8 +37,6 @@
 #alogin{
 	padding: 10px 10px;/* отступы от текста до краев */
 	text-decoration: none;/* убираем декорирование */
-	-moz-appearance: button; /* преобразование для Firefox */
-	-webkit-appearance: button; /* преобразование для Chromium */
 	background: #4CAF50;
 	color: white;
 }
@@ -81,14 +79,12 @@
 
 	.header-right{
 		position: relative;
-		top: 0;
 		right: 0;
 		z-index: 4;
 	}
 
 	#alogin{
-		height: 44px;
-		padding: 13px;
+		padding: 13.2px;
 	}
 
 	.header-name a{
