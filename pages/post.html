@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="Лучший торрент-трекер" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/search.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sidebar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/post.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Footer-with-map.css"/>
+		<title>Торрент-трекер</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="header" id="header">
+					<div class="header-name"><a href="#">Торрент-трекер</a></div>
+					<span id="openNav" onclick="openNav()">☰</span>
+	  				<input type="text" name="search" placeholder="Поиск.." id="search_header">
+	  				<input type="text" name="search" placeholder="Поиск.." id="search_header_mobile">
+					<div class="header-right">
+						<a href="../pages/loginform.html" id="alogin">Вход</a>
+						<a href="../pages/regform.html" id="areg">Регистрация</a>
+					</div>
+				</div>
+				<script src="../js/topnav.js"></script>
+			</header>
+			<div class="left-sidebar" id="left-sidebar">
+				<div class="sidenav" id="sidenav">
+					<div class="menu-a" id="menu-a">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+						<p class="menu_title">Меню сайта</p>
+		  				<a href="../index.html"><i class="fa fa-home"></i> Главная</a>
+		  				<a href="../index.html"><i class="fa fa-gamepad"></i> Игры PC</a>
+		  				<a href="../index.html"><i class="fa fa-windows"></i> Windows</a>
+		  				<a href="../index.html"><i class="fa fa-window-maximize"></i> Софт / Программы</a>
+
+		  				<div style="border-top: 1px solid rgba(255, 255, 255, .1); margin: 10px 0;"></div>
+
+		  				<a href="#"><i class="fa fa-envelope-o"></i> Написать нам письмо</a>
+		  				<a href="#"><i class="fa fa-question-circle-o"></i> Есть вопросы? Вам сюда!</a>
+		  				<a href="#"><i class="fa fa-question"></i> Как качать через торрент?</a>
+					</div>
+				</div>
+				<div class="sidenav-mobile" id="sidenav-mobile">
+					<div class="menu-a" id="menu-a">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+						<p class="menu_title">Меню сайта</p>
+		  				<a href="../index.html"><i class="fa fa-home"></i> Главная</a>
+		  				<a href="../index.html"><i class="fa fa-gamepad"></i> Игры PC</a>
+		  				<a href="../index.html"><i class="fa fa-windows"></i> Windows</a>
+		  				<a href="../index.html"><i class="fa fa-window-maximize"></i> Софт / Программы</a>
+
+		  				<div style="border-top: 1px solid rgba(255, 255, 255, .1); margin: 10px 0;"></div>
+
+		  				<a href="#"><i class="fa fa-envelope-o"></i> Написать нам письмо</a>
+		  				<a href="#"><i class="fa fa-question-circle-o"></i> Есть вопросы? Вам сюда!</a>
+		  				<a href="#"><i class="fa fa-question"></i> Как качать через торрент?</a>
+					</div>
+				</div>
+			</div>
+			<script src="../js/sidenav.js"></script>
+			<main>
+				<div class="container">
+					<div class="container_post_title">
+						<p>Обратная связь</p>
+					</div>
+					<div class="e-mail">
+						<h4>Почта neznayka.2014@yandex.ru</h4>
+					</div>
+					<div class="table">
+						<form>
+							<div style="display: inline;">
+								<label for="text1" style="margin-right: 85.95px;">Имя отправителя<font color="red">*</font>:</label>
+								<input type="text" placeholder="Имя отправителя" required>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="pass" style="margin-right: 70px;">E-mail отправителя<font color="red">*</font>:</label>
+								<input type="text" id="pass" placeholder="E-mail отправителя" required>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="text1" style="margin-right: 85.95px;">Имя отправителя<font color="red">*</font>:</label>
+								<input type="text" placeholder="Имя отправителя" required>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="comment" style="margin-right: 130.04px;">Тема письма:</label>
+								<input type="text" id="comment" placeholder="Тема письма">
+							</div>
+							<br>
+							<div class="comment">
+								<label for="comment" style="vertical-align: top; margin-right: 120.08px;">Текст письма<font color="red">*</font>:</label>
+								<textarea type="comment" id="comment" placeholder="Введите текст" required></textarea>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="checkbox">Я не робот:</label>
+								<label><input type="checkbox" id="checkbox1" /> да</label>
+							</div>
+							<div class="sub_reset"><input type="submit" value="Send">&nbsp;<input type="reset"></div>
+
+							<!--<table>
+							<tr>
+								<div style="width: 15%"><label for="text1">Имя отправителя<font color="red">*</font>:</label></td>
+								<td><input type="text" placeholder="Имя отправителя" style="width: 90%; height: 30px;" required></td>
+							</tr>
+							<tr>
+								<td style="width: 15%"><label for="pass">E-mail отправителя<font color="red">*</font>:</label></td>
+								<td><input type="text" id="pass" placeholder="E-mail отправителя"  style="width: 90%; height: 30px;" required></td>
+							</tr>
+							<tr>
+								<td style="width: 15%"><label for="comment">Тема письма:</label></td>
+								<td><input type="text" id="comment" placeholder="Тема письма" style="width: 90%; height: 30px;"></td>
+							</tr>
+							<tr>
+								<td style="width: 15%; vertical-align: top;"><label for="comment">Текст письма<font color="red">*</font>:</label></td>
+								<td><textarea type="comment" id="comment" placeholder="Введите текст" style="width: 90%; height: 150px;" required></textarea></td>
+							</tr>
+							<tr>
+								<td>
+									<label for="checkbox">Я не робот:</label>
+									<td><label><input type="checkbox" id="checkbox1" /> да</label></td>
+								</td>
+							</tr>
+							</table>
+							<div class="sub_reset"><input type="submit" value="Send">&nbsp;<input type="reset"></div> -->
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer id="myFooter">
+				<a id="contacts"></a>
+				<div class="footer-container">
+					<p>Если вы заметили недочеты по сайту или хотите связаться с нами, напишите на Email: <a href="mailto:neznayka.2014@yandex.ru" style="color: red;">neznayka.2014@yandex.ru</a></p>
+				</div>
+				<div class="icon-bar-mobile">
+			  		<a href="https://vk.com/nurik_1337" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+			  		<a href="https://www.instagram.com/nurik.topskiy/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+			 		<a href="https://github.com/nuriktopskiy" target="_blank" class="github"><i class="fa fa-github"></i></a>
+			 		<a href="https://api.whatsapp.com/send?phone=79006221612" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+				</div>
+			</footer>
+		</div> <!--Конец wrapper (обёртка)-->
+	</body>
+</html>
