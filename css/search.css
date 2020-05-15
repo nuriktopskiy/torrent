@@ -21,9 +21,7 @@
         display: none;
 }
 
-#openSearch{
-        display: none;
-    }
+
 
 @media screen and (max-width: 1024px){
 
@@ -33,6 +31,8 @@
 
     #search_header_mobile[type=text]{
         display: block;
+        position: relative;
+        top: 44px;
         width: 100%;
         height: 40px;
         box-sizing: border-box;
