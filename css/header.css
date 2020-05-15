@@ -30,7 +30,7 @@
 .header-right{
 	position: relative;
 	float: right;
-	top: 23px;
+	top: 13px;
 	right: 13px;
 }
 
@@ -44,12 +44,21 @@
 #areg{
 	padding: 10px 10px;/* отступы от текста до краев */
 	text-decoration: none;/* убираем декорирование */
+	-moz-appearance: button; /* преобразование для Firefox */
+	-webkit-appearance: button; /* преобразование для Chromium */
 	background: purple;
 	color: white;
 }
 
 #openNav{
 	display: none;
+}
+
+@-moz-document url-prefix() {
+ 	.header-right{
+		top: 23px;
+		right: 13px;
+	}
 }
 
 @media screen and (max-width: 1024px){
@@ -69,21 +78,13 @@
 	}
 
 	.header-right{
-		position: static;
+		position: relative;
+		right: 0;
 		z-index: 4;
 	}
 
 	#alogin{
-		padding-top: 12px;
-		display: block;
-    	color: white;
-    	height: 44px;
-    	float: right;
-    	background-color: #4CAF50;
-    	text-align: center;
-    	position: relative;
-    	text-decoration: none;
-    	font-size: 16px;
+		padding: 13.2px;
 	}
 
 	.header-name a{
@@ -113,17 +114,5 @@
    		position: relative;
 		text-decoration: none;
 		font-size: 30px;
-	}
-
-	@-webkit-document url-prefix() {
-	#alogin{
-		padding: 15.2px;
-	}
-}
-
-@-moz-document url-prefix() {
- 	.header-right{
-		top: 23px;
-		right: 13px;
 	}
 }

@@ -55,10 +55,9 @@
 	padding: 0;
 }
 
-.container_rating p{
+.rating-area{
 	margin-top: 4px;
-	padding: 10px;
-
+	margin-left: 10px;
 	float: left;
 }
 
@@ -67,6 +66,7 @@
 	float: right;
 	padding: 10px;
 	text-decoration: none;
+	color: #35c535;
 }
 
 @media screen and (max-width: 1024px){
@@ -92,6 +92,7 @@
 		text-align: center;
 		background: #fbfbfb;
 		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
 	}
 
 	.container_rating p{
@@ -100,11 +101,21 @@
 		font-size: 20px;
 	}
 
+	.download_torrent{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
 	.container_rating a{
 		font-size: 20px;
 		margin-top: 0px;
-		padding: 10px 10px 10px 0px;
+		padding: 0;
 		text-decoration: none;
+		text-align: center;
+		float: none;
 	}
 }
 

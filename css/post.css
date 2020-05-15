@@ -11,6 +11,7 @@ tr, td {
 
 .table{
 	padding: 15px;
+    font-size: 18px;
 }
 
 .container{
@@ -31,6 +32,7 @@ tr, td {
 
 .e-mail{
 	padding: 15px 15px 0px 15px;
+    margin-bottom: 7px;
 }
 
 .e-mail h4{
@@ -49,6 +51,7 @@ input[type=text] {
     padding: 12px 20px 12px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+    margin-bottom: 10px;
 }
 
 textarea[type=comment]{
@@ -70,8 +73,40 @@ label{
 .sub_reset{
 	width: 100%;
 }
+
 .sub_reset input{
 	width: 41%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.table input:not(#checkbox1){
+    width: 49%;
+
+}
+
+.table textarea{
+    width: 50%;
+    height: 150px;
+}
+
+.comment{
+    display: inline;
+}
+
+@media screen and (max-width: 1024px){
+    .e-mail h4{
+        font-size: 20px;
+    }
+
+    .table input:not(#checkbox1){
+        width: 100%;
+        height: 30px;
+    }
+
+    .table textarea{
+        width: 100%;
+        height: 150px;
+    }
+
 }

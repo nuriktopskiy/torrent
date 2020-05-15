@@ -74,9 +74,40 @@
 					</div>
 					<div class="table">
 						<form>
-							<table>
+							<div style="display: inline;">
+								<label for="text1" style="margin-right: 85.95px;">Имя отправителя<font color="red">*</font>:</label>
+								<input type="text" placeholder="Имя отправителя" required>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="pass" style="margin-right: 70px;">E-mail отправителя<font color="red">*</font>:</label>
+								<input type="text" id="pass" placeholder="E-mail отправителя" required>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="text1" style="margin-right: 85.95px;">Имя отправителя<font color="red">*</font>:</label>
+								<input type="text" placeholder="Имя отправителя" required>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="comment" style="margin-right: 130.04px;">Тема письма:</label>
+								<input type="text" id="comment" placeholder="Тема письма">
+							</div>
+							<br>
+							<div class="comment">
+								<label for="comment" style="vertical-align: top; margin-right: 120.08px;">Текст письма<font color="red">*</font>:</label>
+								<textarea type="comment" id="comment" placeholder="Введите текст" required></textarea>
+							</div>
+							<br>
+							<div style="display: inline;">
+								<label for="checkbox">Я не робот:</label>
+								<label><input type="checkbox" id="checkbox1" /> да</label>
+							</div>
+							<div class="sub_reset"><input type="submit" value="Send">&nbsp;<input type="reset"></div>
+
+							<!--<table>
 							<tr>
-								<td style="width: 15%"><label for="text1">Имя отправителя<font color="red">*</font>:</label></td>
+								<div style="width: 15%"><label for="text1">Имя отправителя<font color="red">*</font>:</label></td>
 								<td><input type="text" placeholder="Имя отправителя" style="width: 90%; height: 30px;" required></td>
 							</tr>
 							<tr>
@@ -98,7 +129,7 @@
 								</td>
 							</tr>
 							</table>
-							<div class="sub_reset"><input type="submit" value="Send">&nbsp;<input type="reset"></div>
+							<div class="sub_reset"><input type="submit" value="Send">&nbsp;<input type="reset"></div> -->
 						</form>
 					</div>
 				</div>
