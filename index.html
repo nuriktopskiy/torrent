@@ -22,13 +22,12 @@
 					<div class="header-name"><a href="#">Торрент-трекер</a></div>
 					<span id="openNav" onclick="openNav()">☰</span>
 	  				<input type="text" name="search" placeholder="Поиск.." id="search_header">
-	  				<input type="text" name="search" placeholder="Поиск.." id="search_header_mobile">
 					<div class="header-right">
 						<a href="pages/loginform.html" id="alogin">Вход</a>
 						<a href="pages/regform.html" id="areg">Регистрация</a>
 					</div>
 				</div>
-				<script src="js/topnav.js"></script>
+
 			</header>
 			<div class="left-sidebar" id="left-sidebar">
 				<div class="sidenav" id="sidenav">
@@ -57,6 +56,8 @@
 		  				<a href="#"><i class="fa fa-window-maximize"></i> Софт / Программы</a>
 
 		  				<div style="border-top: 1px solid rgba(255, 255, 255, .1); margin: 10px 0;"></div>
+		  				<a href="#" onclick="openSearch(), closeNav()"><i class="fa fa-search"></i> Поиск</a>
+		  				<div style="border-top: 1px solid rgba(255, 255, 255, .1); margin: 10px 0;"></div>
 
 		  				<a href="pages/post.html"><i class="fa fa-envelope-o"></i> Написать нам письмо</a>
 		  				<a href="pages/post.html"><i class="fa fa-question-circle-o"></i> Есть вопросы? Вам сюда!</a>
@@ -65,6 +66,15 @@
 				</div>
 			</div>
 			<script src="js/sidenav.js"></script>
+			<div id="openSearch">
+				<div class="d2">
+					<form>
+						<input type="text" name="search" placeholder="Поиск.." id="search_header_mobile">
+						<button type="submit" onclick="closeSearch()"></button>
+					</form>
+				</div>
+			</div>
+			<script src="js/search.js"></script>
 			<main>
 				<div class="container">
 					<div class="container_img">

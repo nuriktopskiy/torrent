@@ -76,7 +76,7 @@
 	    background: #fff;
 	    border: 1px solid #ddd;
 	    box-shadow: rgba(23, 32, 42, 0.04) 8px 8px 0px 0px;
-	    display: block;
+	    display: flex;
 	}
 
 	.container_img{
@@ -102,11 +102,11 @@
 	}
 
 	.download_torrent{
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
+		float: right;
 		text-align: center;
 		margin-bottom: 5px;
+		margin-top: 15px;
+		margin-right: 10px;
 	}
 
 	.container_rating a{
@@ -116,6 +116,21 @@
 		text-decoration: none;
 		text-align: center;
 		float: none;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.container{
+	    display: block;
+	}
+
+	.download_torrent{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 0;
 	}
 }
 
