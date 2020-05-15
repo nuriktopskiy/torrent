@@ -103,6 +103,7 @@
 	}
 
 	#openNav{
+		cursor: pointer;
 		display: block;
 		color: white;
 		height: 44px;

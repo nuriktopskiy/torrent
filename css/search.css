@@ -49,23 +49,38 @@
     #openSearch{
         display: none;
     }
+
+    .d2 button {
+        display: table;
+        text-align: center;
+        border: none;
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        top: 50px;
+        right: 8px;
+        background: #F15B42;
+        cursor: pointer;
+    }
+    .d2 button:before {
+        position: relative;
+        left: 7px;
+        top: 2px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        content: "×";
+        font-family: FontAwesome;
+        color: #F9F0DA;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
-
-.d2 button {
-
-  height: 26px;
-  width: 26px;
-  position: absolute;
-  top: 50px;
-  right: 8px;
-  background: #F15B42;
-  cursor: pointer;
-}
-.d2 button:before {
-  content: "×";
-  font-family: FontAwesome;
-  color: #F9F0DA;
-  font-size: 20px;
-  font-weight: bold;
+/** ДЛЯ EDGE/IE**/
+@supports (-ms-ime-align:auto) {
+    .d2 button:before {
+        left: 0px;
+        top: 0px;
+    }
 }
