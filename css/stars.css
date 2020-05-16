@@ -55,7 +55,7 @@
   }
 
   .rating-area:not(:checked) > label {
-    margin-right: 2px;
+    margin-right: 3px;
     width: 37px;
   }
 }

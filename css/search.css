@@ -84,3 +84,18 @@
         top: 0px;
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ _::-webkit-full-page-media, _:future, :root , .d2 button:before {
+        top: 0; 
+        left: 4px;
+    }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ _::-webkit-full-page-media, _:future, :root , #search_header_mobile[type=text]{
+        top: 15px;
+    }
+
+}

@@ -128,3 +128,9 @@
 		right: 13px;
 	}
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ _::-webkit-full-page-media, _:future, :root , #alogin{
+		padding-top: 14px;
+	}
+}
